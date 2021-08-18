@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>16.12.2020</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<style type="text/css"></style>
+	
+	
+</head>
+<body>
+	<div class="main">
+
+		<div class="header">
+			<span>
+				АНКЕТА
+				<br>
+				отримувача паспорта громадянина України для виїзду за кордон 
+			</span>
+			<img src="img/photo.png">
+		</div>
+		
+		<form id="form">
+			<div class="first number_in_black" >
+				<span>
+					1
+				</span>
+			</div>
+			<div class="second number_in_black">
+				<span>
+					2
+				</span>
+			</div>
+			<div class="third number_in_black">
+				<span>
+					3
+				</span>
+			</div>
+			<div class="fourth number_in_black">
+				<span>
+					4
+				</span>
+			</div>
+			<div class="fifth number_in_black">
+				<span>
+					5
+				</span>
+			</div>
+			<div class="sixth number_in_black">
+				<span>
+					6
+				</span>
+			</div>
+			<div class="seventh number_in_black">
+				<span>
+					7
+				</span>
+			</div>
+			<div class="eighth number_in_black">
+				<span>
+					8
+				</span>
+			</div>
+			<div class="ninth number_in_black">
+				<span>
+					9
+				</span>
+			</div>
+			<div class="tenth number_in_black">
+				<span>
+					10
+				</span>
+			</div>
+			<div class="eleventh number_in_black">
+				<span>
+					11
+				</span>
+			</div>
+			<div class="twelwth number_in_black">
+				<span>
+					12
+				</span>
+			</div>
+
+			<div class="left">
+
+				<div class="last_name">
+					<span style="border-bottom: none;">Прізвище&emsp;</span>
+					<input name="last_name" type="text" pattern="[А-Я][а-я]{1,10}" id="last_name" class="inputs">
+				</div>
+
+				<div class="first_name endl" >
+					<span>ім'я та по-батькові&emsp;</span>
+					<input type="text" id="first_name" pattern="[А-Я][а-я]{1,10}\s[А-Я][а-я]{1,10}" id="first_name">
+				</div>
+
+				<div>
+					<span class="title">
+						Колишні
+					</span>
+				</div>
+
+				<div class="before_name">
+					<span style="border-bottom: none;">Прізвище&emsp;</span>
+					<input type="text" id="before_name" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				
+				<div class="before_last_name endl">
+					<span>ім'я та по-батькові&emsp;</span>
+					<input type="text" id="before_last_name" pattern="[А-Я][а-я]{1,10}\s[А-Я][а-я]{1,10}">
+				</div>
+
+				<div class="ident endl">
+					<span>Ідентифікаційний номер&emsp;</span>
+					<input type="text" id="ident" pattern="[\d]{8}">
+				</div>
+
+				<div class="sex">
+					<span>Стать</span>
+					<div>
+						<input type="radio" name="r" value="woman" class="f">Жін<br> 
+						<input type="radio" name="r" value="man" class="m">Чол<br>
+					</div>
+				</div>
+
+				<div class="birth endl">
+					<span>Дата народження&emsp;</span>
+					<input type="date" id="birth" pattern="[\d]{2}.[\d]{2}.[\d]{4}">
+				</div>
+
+				<div class="place">
+					<span class="title">
+						Місце народження
+					</span></div>
+
+				<div class="country">
+					<span style="border-bottom: none;">Країна&emsp;</span>
+					<input type="text" id="country" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="area">
+					<span style="border-bottom: none;">Область&emsp;</span>
+					<input type="text" id="area" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="district">
+					<span style="border-bottom: none;">Район&emsp;</span>
+					<input type="text" id="district" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="city endl">
+					<span>Населений пункт&emsp;</span>
+					<input type="text" id="city" pattern="[А-Я][а-я]{1,10}">
+				</div>
+
+				<div class="passport">
+					<span class="title">
+						Паспорт громадянина України
+					</span></div>
+
+				<div class="seria">
+					<span style="border-bottom: none;">Серія&emsp;</span>
+					<input type="text" id="seria" pattern="[А-Я]{2}">
+				</div>
+
+				<div class="number">
+					<span style="border-bottom: none;">Номер&emsp;</span>
+					<input type="text" id="number" pattern="\d{6}">
+				</div>
+
+				<div class="date">
+					<span style="border-bottom: none;">Дата видачі&emsp;</span>
+					<input type="text" id="date" pattern="[\d]{2}.[\d]{2}.[\d]{4}">
+				</div>
+				
+				<div class="organ endl">
+					<span>Oрган, що видав&emsp;</span>
+					<input type="text" id="organ" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				
+				
+				<div class="doc_birth">
+					<span class="title">
+						Свідотство про народження(для осіб до 16 років)
+					</span></div>
+				
+				<div class="over16">
+					<span id="over_16">Мені більше 16</span>
+					<input type="checkbox" onclick="Check();" id="check_element">
+				</div>
+				
+				<div id="over">
+					<div class="number_write">
+						<span style="border-bottom: none;">Номер запису&emsp;</span>
+						<input type="text" id="number_write" pattern="\d{3}">
+					</div>
+					<div class="date_write">
+						<span style="border-bottom: none;">Дата запису&emsp;</span>
+						<input type="text" id="date_write" pattern="[\d]{2}.[\d]{2}.[\d]{4}">
+					</div>
+					<div class="organ2">
+						<span style="border-bottom: none;">Орган, що видав&emsp;</span>
+						<input type="text" id="organ2" pattern="[А-Я][а-я]{1,10}">
+					</div>
+	
+					<div class="date2">
+						<span style="border-bottom: none;">Дата видачі&emsp;</span>
+						<input type="date" id="date2" pattern="[\d]{2}.[\d]{2}.[\d]{4}">
+					</div>
+					<div class="seria2">
+						<span style="border-bottom: none;">Серія&emsp;</span>
+						<input type="text" id="seria2" pattern="[А-Я]{2}">
+					</div>
+	
+					<div class="number2 endl">
+						<span>Номер&emsp;</span>
+						<input type="text" id="number2" pattern="\d{6}">
+					</div>
+				</div>
+			</div>
+
+			<div class="left marg">
+				<div class="place_live">
+					<span class="title"> 
+						Місце проживання
+					</span>
+				</div>
+
+				<div class="index">
+					<span style="border-bottom: none;">Країна&emsp;</span>
+					<input type="text" id="country" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="area_live">
+					<span style="border-bottom: none;">Область&emsp;</span>
+					<input type="text" id="area_live" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="district_live">
+					<span style="border-bottom: none;">Район&emsp;</span>
+					<input type="text" id="district_live" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="city_live">
+					<span style="border-bottom: none;">Населений пункт&emsp;</span>
+					<input type="text" id="city_live" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="street">
+					<span style="border-bottom: none;">Вулиця&emsp;</span>
+					<input type="text" id="street" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				<div class="street_number endl">
+					<span>Номер&emsp;</span>
+					<input type="text" id="street_number" pattern="\d{5}">
+				</div>
+
+				<div class="phone_number endl">
+					<span>Номер телефону&emsp;</span>
+					<input type="text" id="phone_number" pattern="[+][380]\d{11}">
+				</div>
+				<div class="my_type endl">
+					<span>Тип&emsp;</span>
+					<select id="my_type">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+				
+				<div class="my_number endl">
+					<span>Номер&emsp;</span>
+					<input type="text" id="my_number" pattern="\d{5}">
+				</div>
+
+				<div class="before">
+					<span class="title">
+						Раніше виданий паспорт
+					</span>
+				</div>
+
+				<div class="before_date">
+					<span style="border-bottom: none;">Дата видачі&emsp;</span>
+					<input type="date" id="before_date" pattern="[\d]{2}.[\d]{2}.[\d]{4}">
+				</div>
+				
+				<div class="before_action">
+					<span style="border-bottom: none;">Строк дії&emsp;</span>
+					<input type="date" id="before_last_name" pattern="[\d]{2}.[\d]{2}.[\d]{4}">
+				</div>
+
+				<div class="before_organ endl">
+					<span>Ким виданий&emsp;</span>
+					<input type="text" id="ident" pattern="[А-Я][а-я]{1,10}">
+				</div>
+
+				<div class="before_five endl">
+					<span class="title endl">
+						Останні п'ять років з відомостями, що становлять державну таємницю
+					</span>
+					<div class="last_five">
+						<input type="radio" name="t" value="true" class="in">Обізнаний<br> 
+						<input type="radio" name="t" value="false" class="in">Був обізнаний<br>
+						<input type="radio" name="t" value="not_true" class="in">Не обізнаний і не був обізнаний<br>
+					</div>
+				</div>
+				
+				<div class="my_type endl">
+					<span style="font-size: 1.1em;">Оформлення паспoрта для&emsp;</span>
+					<select id="for_live">
+						<option value="Постійного проживання">Постійного проживання</option>
+						<option value="Тимчасового проживання">Тимчасового проживання</option>
+						
+					</select>
+				</div>
+
+				<div>
+					<span class="title">
+						До документа вносяться
+					</span>
+				</div>
+
+				<div class="before_name2">
+					<span style="border-bottom: none;">Прізвище&emsp;</span>
+					<input type="text" id="before_name2" pattern="[А-Я][а-я]{1,10}">
+				</div>
+				
+				<div class="before_last_name2">
+					<span style="border-bottom: none;">Ім'я&emsp;</span>
+					<input type="text" id="before_last_name2" pattern="[А-Я][а-я]{1,10}">
+				</div>
+
+
+				<div class="date_input endl">
+					<span>Дата заповнення&emsp;</span>
+					<input type="date" id="date_input" pattern="[\d]{2}.[\d]{2}.[\d]{4}">
+				</div>
+
+				<div class="sigh">
+					<input type="submit" class="argree" placeholder="Надіслати">
+				</div>
+				
+			</div>
+					
+		</form>
+	</div>
+	<script src="js.js">
+
+	</script>
+</body>
+</html>

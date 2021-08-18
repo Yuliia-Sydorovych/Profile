@@ -1,0 +1,232 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Caveat', cursive;
+}
+form
+{
+	position: relative;
+}
+div.main
+{
+	height: 1500px;
+	width: 850px;
+	margin-left: 290px;
+}
+div.left, div.right
+{
+	float: left;
+	margin-top: 20px;
+	width: 400px;
+	height: 1000px;
+	position: relative;
+}
+div.header
+{
+	width: 100%;
+	height: 200px;
+}
+div.marg
+{
+	margin-left: 50px;
+}
+
+div.header span
+{
+	display: inline-block;
+	width: 620px;
+	float: left;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 50px;
+	font-family: 'Caveat', cursive;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+div.header img
+{
+	display: inline-block;
+	border: 1px solid silver;
+	width: 120px;
+	height: 180px;
+	margin-top: 10px;
+	float: left;
+}
+
+input
+{
+	border: none;
+	border-bottom: 1px solid black;
+	display: inline-block;
+}
+div.left div span
+{
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	font-size: 1.2em;
+	border: 1px solid black;
+	text-align: center;
+}
+div.left div span.title
+{
+	display: inline-block;
+	width: 380px;
+	height: 40px;
+	border: none;
+	text-align: center;
+}
+div.name span.br, div.before_name span.br, div.country span.br
+{
+	border-bottom: none;
+}
+div.name, div.before_name
+{
+	margin-bottom: 0;
+}
+div#over
+{
+	display: block;
+}
+div.over16 span#over_16
+{
+	border: none;
+}
+div.sex div, div.sex span
+{
+	float: left;
+}
+
+div.sex input.m, div.sex input.f
+{
+	float: left;
+}
+div.endl, span.endl
+{
+	margin-bottom: 20px;
+}
+div.sex
+{
+	height: 40px;
+	margin-bottom: 20px;
+}
+span.title
+{
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #CA0000;
+}
+select, input
+{
+	font-family: 'Caveat', cursive;
+	font-size: 1.1em;
+}
+#over_16
+{
+	font-size: 1.2em;
+	color: #A41919;
+}
+form
+{
+	position: relative;
+}
+
+.number_in_black
+{
+	position: absolute;
+	height: 42px;
+	width: 42px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	left: -42px;
+	font-size: 1.5em;
+}
+
+.sigh
+{
+	margin-top: 100px;
+	margin-left: 150px;
+}
+
+.first
+{
+	top: 20px;
+}
+.second
+{
+	top: 266px;
+}
+.third
+{
+	top: 328px;
+}
+.fourth
+{
+	top: 388px;
+}
+.fifth
+{
+	top: 449px;
+}
+.sixth
+{
+	top: 674px;
+}
+.seventh
+{
+	top: 900px;
+}
+.eighth
+{
+	left: 408px;
+	top: 19px;
+}
+.ninth
+{
+	left: 408px;
+	top: 327px;
+}
+.tenth
+{
+	left: 408px;
+	top: 390px;
+}
+.eleventh
+{
+	left: 408px;
+	top: 513px;
+}
+.twelwth
+{
+	left: 408px;
+	top: 698px;
+}
+#before_date
+{
+	width: 180px;
+}
+
+input.invalid
+{
+    border-color: #DD2C00;
+}
+
+#notify
+{
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 12px;
+  width: 142px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+#notify.error
+{
+  background-color: #DD2C00;
+}
